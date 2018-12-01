@@ -1,0 +1,48 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0rem;
+  margin: 0rem;
+}
+header {
+  background-color: #fff;
+  padding: 1.25rem 0rem;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+}
+main svg {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(to bottom left, #67D7F7, #8657CC);
+}
+nav {
+  background-color: inherit;
+}
+nav ul {
+  color: #005e82;
+  display: flex;
+  font-size: large;
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  padding-right: 2rem;
+}
+main section {
+  background-color: transparent;
+  margin: 2rem auto;
+  max-width: 500px;
+  padding: 2rem 0rem;
+  position: relative;
+}
+main section artical {
+  background-color: #fff;
+  border: 1px solid #005e82;
+  display: block;
+  height: 100px;
+  margin: 2rem 0rem;
+  padding: 2rem;
+}
