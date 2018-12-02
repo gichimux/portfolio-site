@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  font-family: "Cutive Mono", serif;
+  font-family: 'Abel', sans-serif;
   font-size: 1.2em;
   line-height: 1.6;
   background: #CCC;
@@ -143,17 +143,31 @@ section figure{
 #profile-pic-holder {
   margin: auto;
   display: block;
-  height: 220px;
-  width: 220px;
+  height: 200px;
+  width: 200px;
   background-color: #000;
   border: 1px solid #000;
-  border-radius: 50%;
+  border-radius: 2px;
   position: relative;
   z-index: auto;
+  transform: rotate(45deg);
+}
+
+#text {
+
+  display: block;
+  height: 220px;
+  width: 220px;
+  position: relative;
+  z-index: auto;
+  color: green;
+background-color: #000;
+border-radius: 5px;
+
 }
 .footer-social {
   margin: 0 auto;
-  text-align:center;
+  text-align: center;
   border: 1px solid #111;
   padding: 30px;
   width: 40%;
@@ -194,3 +208,10 @@ section figure{
     color: #476FF5;
     background: #FFF;
 }
+
+.text-box{
+background-color: #000;
+
+}
+
+
