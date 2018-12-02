@@ -4,45 +4,150 @@ body {
   padding: 0rem;
   margin: 0rem;
 }
-header {
-  background-color: #fff;
-  padding: 1.25rem 0rem;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 100;
-}
+
 main svg {
   position: fixed;
   left: 0px;
   top: 0px;
   background: linear-gradient(to bottom left, #67D7F7, #8657CC);
 }
-nav {
-  background-color: inherit;
+
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
 }
-nav ul {
-  color: #005e82;
-  display: flex;
-  font-size: large;
-  list-style: none;
-  margin: 0;
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-nav ul li {
-  padding-right: 2rem;
+
+html {
+  font-size: 18px;
 }
-main section {
-  background-color: transparent;
-  margin: 2rem auto;
-  max-width: 500px;
-  padding: 2rem 0rem;
-  position: relative;
+
+body {
+  font-family: "Cutive Mono", serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  background: #CCC;
+  overflow-x: hidden;
 }
-main section artical {
-  background-color: #fff;
-  border: 1px solid #005e82;
+
+label .menu {
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #000;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+  -webkit-box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+   box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+label .hamburger {
+  position: absolute;
+  top: 137px;
+  right: 50px;
+  width: 40px;
+  height: 3px;
+  background: #C086ED;
   display: block;
-  height: 100px;
-  margin: 2rem 0rem;
-  padding: 2rem;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  border-radius: 50% 50%;
+}
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #F56747;
+}
+label .hamburger:before {
+  top: -10px;
+}
+label .hamburger:after {
+  bottom: -10px;
+}
+label input {
+  display: none;
+}
+label input:checked + .menu {
+  -webkit-box-shadow: 0 0 0 100vw #000, 0 0 0 100vh #FFF;
+  box-shadow: 0 0 0 100vw #000, 0 0 0 100vh #FFF;
+  border-radius: 0;
+}
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(180deg);
+  bottom: 0;
+
+}
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+label input:checked + .menu + ul {
+  opacity: 1;
+}
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .7s .1s ease-in-out;
+  transition: .7s .1s ease-in-out;
+  list-style-type: none;
+}
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #67D7F7;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}
+section figure{
+  text-align: center;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: inherit;
+}
+#profile-pic-holder {
+  margin: auto;
+  display: block;
+  height: 220px;
+  width: 220px;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: relative;
+  z-index: auto;
 }
