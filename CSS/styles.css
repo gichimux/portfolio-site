@@ -151,3 +151,46 @@ section figure{
   position: relative;
   z-index: auto;
 }
+.footer-social {
+  margin: 0 auto;
+  text-align:center;
+  border: 1px solid #111;
+  padding: 30px;
+  width: 40%;
+}
+
+.footer-social a {
+  width: 27px;
+  height: 27px;
+  margin: 0 6px;
+  text-align: center;
+  display: inline-block;
+  color: #111;
+  border: 1px solid #111;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  line-height: 25px;
+
+  transition: all 500ms ease;
+}
+.footer-social a i {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+/* hover */
+#git-icon:hover{
+    color: #FFF;
+    background: #000;
+}
+#blog-icon:hover{
+    color: #0CF;
+    background: #FFF;
+}
+
+#linkd-icon:hover{
+    color: #476FF5;
+    background: #FFF;
+}
